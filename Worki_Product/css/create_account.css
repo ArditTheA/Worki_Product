@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300&display=swap');
+
 body {
-    background-color: lightgray;
     margin: 0;
     background-color: #E5E5E5;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
+    font-family: 'Spline Sans', sans-serif;
 }
 
 
-.header_border {
+.header-border {
     display: flex;
     justify-content: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-.worki_image {
+.worki-image {
     width: 40px;
     height: 40px;
 }
@@ -28,7 +31,6 @@ body {
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-family: sans-serif;
 }
 
 #title {
@@ -41,12 +43,16 @@ body {
     text-align: center;
 }
 
-.under_container {
+.font-fam {
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.under-container {
     width: 450px;
     margin-top: 0;
 }
 
-.mutual_stats {
+.mutual-stats {
     border-radius: 30px;
     padding: 8px 0px 8px 12px;
     font-size: 18px;
@@ -56,15 +62,15 @@ body {
     box-sizing: border-box;
 }
 
-.mutual_stats:focus {
+.mutual-stats:focus {
     outline: none;
 }
 
-.mutual_stats::placeholder {
+.mutual-stats::placeholder {
     color: #9E9E9E;
 }
 
-.fourth_input {
+.password-input {
     border-radius: 30px;
     padding: 8px 0px 8px 12px;
     font-size: 18px;
@@ -78,56 +84,57 @@ body {
     outline: none;
 }
 
-.fourth_input::placeholder {
+.password-input::placeholder {
     color: #9E9E9E;
 }
 
-.first_input {
-    margin-bottom: 20px;
+.name-input {
     width: 48%;
 }
 
-.second_input {
+.surname-input {
     float: right;
-    margin-bottom: 20px;
     width: 48%;
+    font-family: 'Spline Sans', sans-serif;
 }
 
-.third_input {
+.name-input, .surname-input, .email-input {
     margin-bottom: 20px;
 }
 
-.same_color_of_paragraphs {
+.same-color-of-paragraphs {
     color: #9E9E9E;
 }
 
-.terms_conditions_link, .sign_in_link {
+.terms-conditions-link, .sign-in-link {
     color: #1877F2;
 }
 
-.sign_in_link {
+.sign-in-link {
     text-decoration: none;
 }
 
-.first_paragraph {
+.first-paragraph {
     padding-left: 12px;
     font-size: 15px;
 }
 
-.second_paragraph {
+.second-paragraph {
     text-align: center;
     font-size: 15px;
 }
 
-.second_paragraph .btn1 {
+.second-paragraph .sign-up-submit-input {
     text-align: center;
 }
 
-.fifth_input {
+.sign-up-google {
     text-align: center;
+    color: #9E9E9E;
+    text-decoration: none;
 }
 
-.btn1 {
+.sign-up-submit-input {
     padding: 8px 0px;
     border-radius: 30px;
     background-color: #1877F2;
@@ -139,16 +146,16 @@ body {
     cursor: pointer;
 }
 
-.btn1:focus {
+.sign-up-submit-input:focus {
     outline: none;
 }
 
-.third_paragraph {
+.third-paragraph {
     font-size: 15px;
     margin-bottom: 0;
 }
 
-.input_form {
+.input-form {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -175,13 +182,13 @@ body {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .header_border {
+    .header-border {
         display: none;
     }
-    .worki_image {
+    .worki-image {
         display: none;
     }
-    .under_container {
+    .under-container {
         padding-left: 18px;
         padding-right: 18px;
         height: 100vh;
@@ -191,29 +198,29 @@ body {
         width: 250px;
         padding-bottom: 30px;
     }
-    .first_paragraph {
+    .first-paragraph {
         font-size: 12px;
     }
-    .second_paragraph {
+    .second-paragraph {
         font-size: 12px;
     }
-    .third_paragraph {
+    .third-paragraph {
         font-size: 12px;
     }
-    .btn1, .fifth_input {
+    .sign-up-submit-input, .sign-up-google {
         font-size: 15px;
     }
     
-    .first_input, .second_input, .third_input, .fourth_input, .btn1 .fifth_input {
+    .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input .sign-up-google {
         font-size: 15px;
     }
-    .first_input {
+    .name-input {
         margin-bottom: 17px;
     }
-    .second_input {
+    .surname-input {
         margin-bottom: 17px;
     }
-    .third_input {
+    .email-input {
         margin-bottom: 17px;
     }
 }
@@ -223,41 +230,29 @@ body {
         padding-top: 35px;
         padding-bottom: 35px;
     }
-    .header_border {
+    .header-border {
         padding-top: 12px;
         padding-bottom: 12px;
     }
-    .worki_image {
+    .worki-image {
         width: 36px;
         height: 36px;
     }
-    .under_container {
+    .under-container {
         width: 380px;
     }
     #title {
-        font-size: 40px;
+        font-size: 39px;
         width: 280px;
         padding-bottom: 30px;
     }
-    .first_paragraph {
+    .first-paragraph, .second-paragraph, .third-paragraph {
         font-size: 13px;
     }
-    .second_paragraph {
-        font-size: 13px;
-    }
-    .third_paragraph {
-        font-size: 13px;
-    }
-    .first_input {
+    .name-input, .surname-input, .email-input {
         margin-bottom: 18px;
     }
-    .second_input {
-        margin-bottom: 18px;
-    }
-    .third_input {
-        margin-bottom: 18px;
-    }
-    .first_input, .second_input, .third_input, .fourth_input, .btn1, .fifth_input {
+    .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input, .sign-up-google {
         font-size: 16px;
     }
 }
@@ -267,15 +262,15 @@ body {
         padding-top: 37px;
         padding-bottom: 37px;
     }
-    .header_border {
+    .header-border {
         padding-top: 14px;
         padding-bottom: 14px;
     }
-    .worki_image {
+    .worki-image {
         width: 38px;
         height: 38px;
     }
-    .under_container {
+    .under-container {
         width: 420px;
     }
     #title {
@@ -283,25 +278,25 @@ body {
         width: 300px;
         padding-bottom: 33px;
     }
-    .first_paragraph {
+    .first-paragraph {
         font-size: 14px;
     }
-    .second_paragraph {
+    .second-paragraph {
         font-size: 14px;
     }
-    .third_paragraph {
+    .third-paragraph {
         font-size: 14px;
     }
-    .first_input {
+    .name-input {
         margin-bottom: 19px;
     }
-    .second_input {
+    .surname-input {
         margin-bottom: 19px;
     }
-    .third_input {
+    .email-input {
         margin-bottom: 19px;
     }
-    .first_input, .second_input, .third_input, .fourth_input, .btn1, .fifth_input {
+    .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input, .sign-up-google {
         font-size: 17px;
     }
 }

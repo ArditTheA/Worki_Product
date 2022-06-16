@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="../css/authenticated.css">
 </head>
 <body>
-    <header id="header_border">
-        <img id="worki_image" src="../images/Worki_Logo.png" title="Worki_Icon">
-        <div id="two_images">
-            <img class="jobs_icon-button" title="Jobs" src="../images/JOBS_icon copy 1.png copy 1.png">
-            <img src="../images/Profile.png" id="profile_image-button" title="Profile" alt="">
+    <header id="header-border">
+        <img id="worki-image" src="../images/Worki_Logo.png" title="Worki-Icon">
+        <div id="jobs-and-profile">
+          <a href="#"><img class="jobs-icon-button" title="Jobs" src="../images/JOBS_icon copy 1.png"></a>
+            <img src="../images/Profile.png" id="profile-image-button" title="Profile" alt="">
         </div>
     </header>
+
+    <div class="dropdown">
+       <div class="dropdown-content" ><a href="" class="dropdown-content-text">My profile</a></div>
+       <div class="dropdown-mid-content"><a href="" class="dropdown-content-text">My jobs</a></div>
+       <div class="dropdown-content"><a href="" class="dropdown-content-text">Sign out</a></div>
+    </div>
 </body>
+
+    <script src="../js/profile_dropdown.js"></script>
 </html>
