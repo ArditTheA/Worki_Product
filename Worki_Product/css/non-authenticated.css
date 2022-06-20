@@ -8,8 +8,8 @@ body {
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +17,6 @@ body {
 
 #worki-image {
     margin-left: 40px;
-    width: 40px;
     height: 40px;
 }
 
@@ -28,30 +27,30 @@ body {
 }
 
 .jobs-icon-button {
-    margin-right: 25px;
-    width: 40px;
+    margin-right: 20px;
     height: 40px;
 }
 
 #sign-in-button {
-    margin-right: 25px;
+    margin-right: 20px;
     border-radius: 20px;
     height: 40px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: solid  1.2px;
     color: #1877F2;
     background-color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #sign-in-button:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.95);
 }
 
 #sign-up-button {
     margin-right: 40px;
+    margin-left: 0px;
     border-radius: 20px;
     height: 40px;
     padding-left: 20px;
@@ -60,93 +59,84 @@ body {
     color: white;
     background-color: #1877F2;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #sign-up-button:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.95);
 }
 
 #sign-in-button:focus, #sign-up-button:focus {
     outline: none;
 }
-
-@media screen and (max-width: 480px) {
-    #sign-up-button {
-        font-size: 11px;
-        margin-right: 10px;
-        height: 26px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #worki-image {
-        margin-left: 10px;
-        width: 26px;
-        height: 26px;
-    } 
-    #sign-in-button {
-        margin-right: 10px;
-        font-size: 11px;
-        height: 26px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .jobs-icon-button {
-        width: 26px;
-        height: 26px;
-        margin-right: 10px;
-    }
-}
-
-@media screen and (max-width: 767px) and (min-width: 481px) {
-    #worki-image {
-        margin-left: 20px;
-        width: 36px;
-        height: 36px;
-    }
-    .jobs-icon-button {
-        width: 36px;
-        height: 36px;
-        margin-right: 17px;
-    }
-    #sign-in-button {
-        height: 36px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 14px;
-        margin-right: 17px;
-    }
-    #sign-up-button {
-        margin-right: 20px;
-        height: 36px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 14px;
-    }
-}
-
 @media screen and (max-width: 1024px) and (min-width: 768px) {    
     #worki-image {
         margin-left: 30px;
-        width: 38px;
         height: 38px;
     }
     .jobs-icon-button {
-        width: 38px;
         height: 38px;
     }
     #sign-in-button { 
         height: 38px;
         padding-left: 18px;
         padding-right: 18px;
-        font-size: 16px;
     }
     #sign-up-button {
         margin-right: 30px;
         height: 38px;
-        padding-left: 14px;
-        padding-right: 14px;
-        font-size: 16px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+    #worki-image {
+        margin-left: 20px;
+        height: 36px;
+    }
+    .jobs-icon-button {
+        height: 36px;
+        margin-right: 15px;
+    }
+    #sign-in-button {
+        height: 36px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    #sign-up-button {
+        margin-right: 20px;
+        height: 36px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #worki-image {
+        margin-left: 10px;
+        height: 30px;
+    }
+    .jobs-icon-button {
+        height: 30px;
+        margin-right: 10px;
+    }
+    #sign-in-button {
+        margin-right: 10px;
+        font-size: 12px;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #sign-up-button {
+        font-size: 12px;
+        margin-right: 10px;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

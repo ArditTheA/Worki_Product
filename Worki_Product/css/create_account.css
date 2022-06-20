@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
 
 body {
     margin: 0;
     background-color: #E5E5E5;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     font-family: 'Spline Sans', sans-serif;
+
 }
-
-
 .header-border {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .worki-image {
-    width: 40px;
-    height: 40px;
+    height: 60px;
 }
 
 .container {
@@ -39,7 +37,7 @@ body {
     font-weight: 400;
     color: #1877F2;
     margin: auto;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -54,9 +52,9 @@ body {
 
 .mutual-stats {
     border-radius: 30px;
-    padding: 8px 0px 8px 12px;
+    padding: 10px 0px 10px 10px;
     font-size: 18px;
-    border: 0.75px solid #9E9E9E;
+    border: 0.5px solid #9E9E9E;
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -72,9 +70,9 @@ body {
 
 .password-input {
     border-radius: 30px;
-    padding: 8px 0px 8px 12px;
+    padding: 10px 0px 10px 10px;
     font-size: 18px;
-    border: 0.75px solid #9E9E9E;
+    border: 0.5px solid #9E9E9E;
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -108,6 +106,7 @@ body {
 
 .terms-conditions-link, .sign-in-link {
     color: #1877F2;
+    text-decoration: none;
 }
 
 .sign-in-link {
@@ -115,13 +114,17 @@ body {
 }
 
 .first-paragraph {
-    padding-left: 12px;
-    font-size: 15px;
+    padding-left: 10px;
 }
 
 .second-paragraph {
     text-align: center;
-    font-size: 15px;
+}
+.first-paragraph, .second-paragraph {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
 }
 
 .second-paragraph .sign-up-submit-input {
@@ -135,15 +138,15 @@ body {
 }
 
 .sign-up-submit-input {
-    padding: 8px 0px;
+    padding: 10px 0px;
     border-radius: 30px;
     background-color: #1877F2;
     color: white;
     font-size: 18px;
     width: 100%;
     text-align: center;
-    border: none;
     cursor: pointer;
+    border: 0.5px solid #1877F2;
 }
 
 .sign-up-submit-input:focus {
@@ -151,8 +154,10 @@ body {
 }
 
 .third-paragraph {
-    font-size: 15px;
-    margin-bottom: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 0;
+    padding-top: 20px;
 }
 
 .input-form {
@@ -164,8 +169,8 @@ body {
 
 .icon {
     position: absolute;
-    left: 12px;
-    height: 76%;
+    left: 10px;
+    height: 80%;
 }
 
 #togglePassword {
@@ -173,102 +178,21 @@ body {
     right: 22px;
 }
 
-
-
-@media screen and (max-width: 480px) {
-    body {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .header-border {
-        display: none;
-    }
-    .worki-image {
-        display: none;
-    }
-    .under-container {
-        padding-left: 18px;
-        padding-right: 18px;
-        height: 100vh;
-    }
-    #title {
-        font-size: 35px;
-        width: 250px;
-        padding-bottom: 30px;
-    }
-    .first-paragraph {
-        font-size: 12px;
-    }
-    .second-paragraph {
-        font-size: 12px;
-    }
-    .third-paragraph {
-        font-size: 12px;
-    }
-    .sign-up-submit-input, .sign-up-google {
-        font-size: 15px;
-    }
-    
-    .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input .sign-up-google {
-        font-size: 15px;
-    }
-    .name-input {
-        margin-bottom: 17px;
-    }
-    .surname-input {
-        margin-bottom: 17px;
-    }
-    .email-input {
-        margin-bottom: 17px;
-    }
-}
-
-@media screen and (max-width: 767px) and (min-width: 481px) {
-    .container {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-    .header-border {
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-    .worki-image {
-        width: 36px;
-        height: 36px;
-    }
-    .under-container {
-        width: 380px;
-    }
-    #title {
-        font-size: 39px;
-        width: 280px;
-        padding-bottom: 30px;
-    }
-    .first-paragraph, .second-paragraph, .third-paragraph {
-        font-size: 13px;
-    }
-    .name-input, .surname-input, .email-input {
-        margin-bottom: 18px;
-    }
-    .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input, .sign-up-google {
-        font-size: 16px;
-    }
-}
-
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+    body {
+        padding: 0px 36px 36px 36px;
+        
+    }
     .container {
-        padding-top: 37px;
-        padding-bottom: 37px;
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
     .header-border {
-        padding-top: 14px;
-        padding-bottom: 14px;
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
     .worki-image {
-        width: 38px;
-        height: 38px;
+        height: 55px;
     }
     .under-container {
         width: 420px;
@@ -276,27 +200,118 @@ body {
     #title {
         font-size: 42px;
         width: 300px;
-        padding-bottom: 33px;
+        padding-bottom: 36px;
     }
-    .first-paragraph {
-        font-size: 14px;
-    }
-    .second-paragraph {
-        font-size: 14px;
+    .first-paragraph, .second-paragraph {
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
     .third-paragraph {
+        padding-top: 18px;
+    }
+    .first-paragraph, .second-paragraph, .third-paragraph {
         font-size: 14px;
     }
-    .name-input {
-        margin-bottom: 19px;
-    }
-    .surname-input {
-        margin-bottom: 19px;
-    }
-    .email-input {
-        margin-bottom: 19px;
+    .name-input, .surname-input, .email-input {
+        margin-bottom: 18px;
     }
     .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input, .sign-up-google {
         font-size: 17px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+    body {
+        padding: 0px 20px 20px 20px;
+        
+    }
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header-border {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .worki-image {
+        height: 50px;
+    }
+    .under-container {
+        width: 380px;
+    }
+    #title {
+        font-size: 38px;
+        width: 280px;
+        padding-bottom: 30px;
+    }
+    .first-paragraph, .second-paragraph {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .third-paragraph {
+        padding-top: 15px;
+    }
+    .first-paragraph, .second-paragraph, .third-paragraph {
+        font-size: 13px;
+    }
+    .name-input, .surname-input, .email-input {
+        margin-bottom: 15px;
+    }
+    .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input, .sign-up-google {
+        font-size: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px 10px 10px 10px;
+        
+    }
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header-border {
+        display: none;
+    }
+    .worki-image {
+        display: none;
+    }
+    .under-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100vh;
+    }
+    #title {
+        font-size: 33px;
+        width: 250px;
+        padding-bottom: 30px;
+    }
+    .first-paragraph, .second-paragraph {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .third-paragraph {
+        padding-top: 10px;
+    }
+    .first-paragraph, .second-paragraph, .third-paragraph {
+        font-size: 12px;
+    }
+    .name-input, .surname-input, .email-input, .password-input, .sign-up-submit-input, .sign-up-google {
+        font-size: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .name-input {
+        margin-bottom: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .name-input, .surname-input, .email-input {
+        margin-bottom: 15px;
     }
 }
